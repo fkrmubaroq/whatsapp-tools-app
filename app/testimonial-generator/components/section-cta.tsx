@@ -9,18 +9,17 @@ export default function SectionCTA() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-          Siap Meningkatkan Penjualan Anda?
+          Ready to Boost Your Sales?
         </h2>
         <p className="text-[#DCF8C6] text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-          Bergabunglah dengan ribuan pemilik bisnis yang telah menggunakan
-          TestiGen untuk membuat social proof yang terpercaya dan meningkatkan
-          konversi.
+          Join thousands of business owners who use TestiGen to create trusted
+          social proof and increase their conversions.
         </p>
         <a
           href={CTA_TO_CREATE}
           className="inline-block bg-white text-[#128C7E] hover:bg-gray-100 px-10 py-5 rounded-full font-bold text-xl transition-all shadow-xl hover:scale-105 transform duration-200"
         >
-          Mulai Buat Testimoni — Gratis
+          Start Creating Testimonials — Free
         </a>
       </div>
     </section>

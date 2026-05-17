@@ -3,18 +3,18 @@ import { CheckCircle, MapPin, MessageCircle, Quote } from "lucide-react";
 const features = [
   {
     icon: <MessageCircle className="text-[#25D366]" size={32} />,
-    title: "Format WhatsApp Asli",
-    desc: "Desain bubble chat, font, dan warna 100% mirip dengan tampilan WhatsApp asli untuk keaslian maksimal.",
+    title: "Authentic WhatsApp Format",
+    desc: "Chat bubble designs, fonts, and colors are 100% identical to the real WhatsApp interface for maximum authenticity.",
   },
   {
     icon: <CheckCircle className="text-blue-500" size={32} />,
-    title: "Verifikasi Centang Biru",
-    desc: "Tambahkan detail seperti centang biru (read receipt) dan stempel waktu untuk meningkatkan kredibilitas.",
+    title: "Blue Tick Verification",
+    desc: "Add details like blue ticks (read receipts) and timestamps to boost credibility.",
   },
   {
     icon: <Quote className="text-purple-500" size={32} />,
-    title: "Custom Avatar & Nama",
-    desc: "Personalisasi pengirim dengan nama kustom dan avatar acak atau unggah foto pelanggan asli Anda.",
+    title: "Custom Avatar & Name",
+    desc: "Personalize the sender with a custom name and a random avatar or upload your real customer's photo.",
   },
 ];
 
@@ -24,11 +24,11 @@ export default function SectionFeature() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#128C7E] mb-4">
-            Fitur Utama TestiGen
+            TestiGen Key Features
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Semua yang Anda butuhkan untuk membuat social proof yang meyakinkan
-            tanpa keahlian desain.
+            Everything you need to create convincing social proof without any
+            design skills.
           </p>
         </div>
 

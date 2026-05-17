@@ -16,26 +16,26 @@ export default function SectionHero() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
         <div className="flex-1 text-center md:text-left">
           <div className="inline-block bg-[#DCF8C6] text-[#075E54] px-4 py-1 rounded-full text-sm font-semibold mb-6 shadow-sm">
-            🌟 Tool Pemasaran Terbaik 2026
+            🌟 Best Marketing Tool 2026
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#128C7E] leading-tight mb-6">
-            Bangun Kepercayaan dengan Testimoni Autentik
+            Build Trust with Authentic Testimonials
           </h1>
           <p className="text-gray-600 text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0">
-            Buat gambar testimoni yang terlihat nyata dari percakapan WhatsApp
-            dalam hitungan detik. Tingkatkan konversi penjualan Anda hari ini!
+            Create realistic-looking testimonial images from WhatsApp conversations
+            in seconds. Boost your sales conversion today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
               href={CTA_TO_CREATE}
               className="bg-[#128C7E] hover:bg-[#075E54] text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg flex items-center justify-center gap-2"
             >
-              Coba Generator Sekarang <MessageCircle size={20} />
+              Try Generator Now <MessageCircle size={20} />
             </Link>
           </div>
           <p className="mt-4 text-sm text-gray-500">
             <CheckCircle size={14} className="inline text-[#25D366] mr-1" />{" "}
-            Gratis digunakan. Tanpa biaya sepeserpun
+            Free to use. No hidden fees
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function SectionHero() {
                 />
               </div>
               <div>
-                <div className="font-semibold text-sm">Pelanggan Setia</div>
+                <div className="font-semibold text-sm">Loyal Customer</div>
                 <div className="text-xs text-green-200">online</div>
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function SectionHero() {
             <div className="space-y-4">
               <div className="bg-white p-3 rounded-lg rounded-tl-none shadow-sm max-w-[85%] relative">
                 <p className="text-sm text-gray-800">
-                  Halo min, paketnya udah sampai ya! 😍
+                  Hi admin, the package has arrived! 😍
                 </p>
                 <div className="text-[10px] text-gray-400 text-right mt-1">
                   10:42 AM
@@ -67,8 +67,7 @@ export default function SectionHero() {
               </div>
               <div className="bg-white p-3 rounded-lg rounded-tl-none shadow-sm max-w-[85%] relative">
                 <p className="text-sm text-gray-800">
-                  Kualitas bajunya bagus banget, bahannya adem. Gak nyesel beli
-                  di sini!
+                  The quality is really good, the material is comfortable. Don't regret buying it here!
                 </p>
                 <div className="text-[10px] text-gray-400 text-right mt-1">
                   10:43 AM
@@ -76,8 +75,7 @@ export default function SectionHero() {
               </div>
               <div className="bg-[#DCF8C6] p-3 rounded-lg rounded-tr-none shadow-sm max-w-[85%] ml-auto relative">
                 <p className="text-sm text-gray-800">
-                  Wah, terima kasih banyak kak atas kepercayaannya! Ditunggu
-                  orderan selanjutnya ya 🙏
+                  Wow, thank you so much for your trust! We look forward to your next order 🙏
                 </p>
                 <div className="text-[10px] text-gray-500 text-right mt-1 flex justify-end items-center gap-1">
                   10:45 AM <span className="text-[#34B7F1]">✓✓</span>
@@ -89,7 +87,7 @@ export default function SectionHero() {
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-gray-400">
                 <MessageCircle size={16} />
               </div>
-              <div className="flex-1 text-gray-400 text-sm">Ketik pesan...</div>
+              <div className="flex-1 text-gray-400 text-sm">Type a message...</div>
             </div>
           </div>
         </div>

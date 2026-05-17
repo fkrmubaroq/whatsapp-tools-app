@@ -12,16 +12,16 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-gray-400 max-w-sm">
-            Alat pemasaran esensial untuk membuat gambar testimoni WhatsApp yang
-            meyakinkan dengan cepat dan mudah.
+            An essential marketing tool to create convincing WhatsApp testimonial
+            images quickly and easily.
           </p>
         </div>
         <div>
-          <h4 className="text-white font-semibold mb-4">Tautan Berguna</h4>
+          <h4 className="text-white font-semibold mb-4">Useful Links</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <a href="#" className="hover:text-white transition-colors">
-                Beranda
+                Home
               </a>
             </li>
             <li>
@@ -29,7 +29,7 @@ export default function Footer() {
                 href="#features"
                 className="hover:text-white transition-colors"
               >
-                Fitur
+                Features
               </a>
             </li>
             <li>
@@ -47,12 +47,12 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li>
               <a href="#" className="hover:text-white transition-colors">
-                Syarat & Ketentuan
+                Terms & Conditions
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-white transition-colors">
-                Kebijakan Privasi
+                Privacy Policy
               </a>
             </li>
             <li>
@@ -64,8 +64,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-6xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} TestiGen. Dibuat untuk tujuan
-        demonstrasi UI.
+        &copy; {new Date().getFullYear()} TestiGen. Made for UI demonstration purposes.
       </div>
     </footer>
   );

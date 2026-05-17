@@ -1,4 +1,11 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "WA Tools - Home",
+  description: "A collection of useful WhatsApp tools and generators.",
+};
+
 
 export default function Home() {
   return (

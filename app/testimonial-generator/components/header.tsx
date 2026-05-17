@@ -10,20 +10,20 @@ export const Header = () => (
       </div>
       <nav className="hidden md:flex gap-6 font-medium text-sm">
         <a href="#features" className="hover:text-[#ECE5DD] transition-colors">
-          Fitur
+          Features
         </a>
         <a
           href="#how-it-works"
           className="hover:text-[#ECE5DD] transition-colors"
         >
-          Fitur
+          How it Works
         </a>
       </nav>
       <a
         href={CTA_TO_CREATE}
         className="bg-[#25D366] hover:bg-[#1DA851] text-white px-5 py-2 rounded-full font-semibold text-sm transition-all shadow-sm flex items-center gap-1"
       >
-        Mulai Buat <ChevronRight size={16} />
+        Start Creating <ChevronRight size={16} />
       </a>
     </div>
   </header>
