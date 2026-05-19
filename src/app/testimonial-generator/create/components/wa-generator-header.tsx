@@ -14,6 +14,7 @@ import {
   Video,
   PhoneIcon,
 } from "lucide-react";
+import { Input } from "@/src/components/shared/input";
 
 interface WAGeneratorHeaderProps {
   avatarUrl: string;
@@ -47,7 +48,7 @@ const WAGeneratorHeader = ({
       <div className="absolute inset-0 bg-black/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
         <Camera size={16} color="white" />
       </div>
-      <input
+      <Input
         type="file"
         id="avatar-upload"
         accept="image/*"
@@ -57,21 +58,21 @@ const WAGeneratorHeader = ({
     </div>
 
     <div className="flex flex-col">
-      <input
+      <Input
         type="text"
         value={contactName}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
           setContactName(e.target.value)
         }
-        className="font-semibold text-[14px] bg-transparent border-none outline-none text-white w-full truncate focus:bg-white/10 rounded px-1 -mx-1"
+        className="font-semibold text-[14px] bg-transparent border-none outline-none text-white w-full h-auto p-0 truncate focus:bg-white/10 rounded px-1 -mx-1"
       />
-      <input
+      <Input
         type="text"
         value={statusText}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
           setStatusText(e.target.value)
         }
-        className="text-[12.5px] text-white/60 bg-transparent border-none outline-none w-full truncate focus:bg-white/10 rounded px-1 -mx-1"
+        className="text-[12.5px] text-white/60 bg-transparent border-none outline-none w-full h-auto p-0 truncate focus:bg-white/10 rounded px-1 -mx-1"
       />
     </div>
 

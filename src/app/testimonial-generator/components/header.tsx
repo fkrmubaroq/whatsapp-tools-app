@@ -1,5 +1,5 @@
 import { ChevronRight, MessageCircle } from "lucide-react";
-import { CTA_TO_CREATE } from "../variables/constant";
+import { CTA_TO_CREATE_TESTIMONIAL_GENERATOR } from "../variables/constant";
 
 export const Header = () => (
   <header className="bg-[#075E54] text-white py-4 px-6 sticky top-0 z-50 shadow-md">
@@ -20,7 +20,7 @@ export const Header = () => (
         </a>
       </nav>
       <a
-        href={CTA_TO_CREATE}
+        href={CTA_TO_CREATE_TESTIMONIAL_GENERATOR}
         className="bg-[#25D366] hover:bg-[#1DA851] text-white px-5 py-2 rounded-full font-semibold text-sm transition-all shadow-sm flex items-center gap-1"
       >
         Start Creating <ChevronRight size={16} />

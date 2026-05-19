@@ -8,6 +8,8 @@ import {
   X,
 } from "lucide-react";
 import { MessageType } from "../page";
+import { Input } from "@/src/components/shared/input";
+import { Label } from "@/src/components/shared/label";
 
 interface WAControlPanelProps {
   addMessage: (type: MessageType) => void;
@@ -93,34 +95,34 @@ const WAControlPanel = ({
                     alt="Avatar"
                     className="w-14 h-14 bg-white rounded-full object-cover border border-gray-200"
                   />
-                  <label className="absolute inset-0 bg-black/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer transition-opacity">
+                  <Label className="absolute inset-0 bg-black/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer transition-opacity">
                     <Camera size={16} color="white" />
-                    <input
+                    <Input
                       type="file"
                       accept="image/*"
                       className="hidden"
                       onChange={handleAvatarUpload}
                     />
-                  </label>
+                  </Label>
                 </div>
                 <div className="flex-1 space-y-2">
-                  <input
+                  <Input
                     type="text"
                     value={contactName}
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                       setContactName(e.target.value)
                     }
                     placeholder="Nama Kontak"
-                    className="w-full text-gray-500 text-sm py-1.5 px-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#128C7E] focus:border-transparent outline-none bg-white"
+                    className="w-full text-gray-500 text-sm py-1.5 px-3 h-auto border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#128C7E] focus:border-transparent outline-none bg-white"
                   />
-                  <input
+                  <Input
                     type="text"
                     value={statusText}
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                       setStatusText(e.target.value)
                     }
                     placeholder="Status (contoh: online)"
-                    className="w-full text-gray-500 text-sm py-1.5 px-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#128C7E] focus:border-transparent outline-none bg-white"
+                    className="w-full text-gray-500 text-sm py-1.5 px-3 h-auto border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#128C7E] focus:border-transparent outline-none bg-white"
                   />
                 </div>
               </div>
@@ -136,15 +138,15 @@ const WAControlPanel = ({
                   className="w-14 h-14 rounded-lg bg-cover bg-center border border-gray-200 flex-shrink-0"
                   style={{ backgroundImage: `url(${chatBackground})` }}
                 ></div>
-                <label className="flex-1 py-2 px-3 bg-white border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 cursor-pointer text-gray-700">
+                <Label className="flex-1 py-2 px-3 bg-white border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 cursor-pointer text-gray-700">
                   <Camera size={16} /> Ganti Background
-                  <input
+                  <Input
                     type="file"
                     accept="image/*"
                     className="hidden"
                     onChange={handleBackgroundUpload}
                   />
-                </label>
+                </Label>
               </div>
             </div>
 
@@ -175,24 +177,24 @@ const WAControlPanel = ({
                 Tambah Pesan Gambar
               </p>
               <div className="flex gap-2">
-                <label className="flex-1 text-gray-500 py-2 px-3 bg-white border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 cursor-pointer">
+                <Label className="flex-1 text-gray-500 py-2 px-3 bg-white border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-1 cursor-pointer">
                   <ImageIcon size={16} /> Kiri
-                  <input
+                  <Input
                     type="file"
                     accept="image/*"
                     className="hidden"
                     onChange={(e) => addImageMessage("received", e)}
                   />
-                </label>
-                <label className="flex-1 py-2 px-3 bg-[#DCF8C6] border border-[#DCF8C6] rounded-lg text-sm font-medium hover:bg-[#cbf1ae] transition-colors flex items-center justify-center gap-1 cursor-pointer text-[#075E54]">
+                </Label>
+                <Label className="flex-1 py-2 px-3 bg-[#DCF8C6] border border-[#DCF8C6] rounded-lg text-sm font-medium hover:bg-[#cbf1ae] transition-colors flex items-center justify-center gap-1 cursor-pointer text-[#075E54]">
                   <ImageIcon size={16} /> Kanan
-                  <input
+                  <Input
                     type="file"
                     accept="image/*"
                     className="hidden"
                     onChange={(e) => addImageMessage("sent", e)}
                   />
-                </label>
+                </Label>
               </div>
             </div>
 

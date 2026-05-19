@@ -1,5 +1,6 @@
 import { CheckCircle, Trash2 } from "lucide-react";
 import { Message } from "../page";
+import { Input } from "@/src/components/shared/input";
 
 interface WAMessageBubbleProps {
   msg: Message;
@@ -109,11 +110,11 @@ export default function WAMessageBubble({
         </div>
 
         <div className="absolute bottom-1 right-2 flex items-center gap-1">
-          <input
+          <Input
             type="text"
             value={msg.time}
             onChange={(e) => updateMessage(msg.id, "time", e.target.value)}
-            className="text-[10px] text-gray-500 bg-transparent border-none outline-none w-8 text-right focus:bg-black/5 rounded"
+            className="text-[10px] text-gray-500 bg-transparent border-none outline-none w-10 h-auto p-0 text-right focus:bg-black/5 rounded"
           />
           {isSent && (
             <span className={msg.isRead ? "text-[#34B7F1]" : "text-gray-400"}>

@@ -1,4 +1,4 @@
-import { CTA_TO_CREATE } from "../variables/constant";
+import { CTA_TO_CREATE_TESTIMONIAL_GENERATOR } from "../variables/constant";
 
 export default function SectionCTA() {
   return (
@@ -16,7 +16,7 @@ export default function SectionCTA() {
           social proof and increase their conversions.
         </p>
         <a
-          href={CTA_TO_CREATE}
+          href={CTA_TO_CREATE_TESTIMONIAL_GENERATOR}
           className="inline-block bg-white text-[#128C7E] hover:bg-gray-100 px-10 py-5 rounded-full font-bold text-xl transition-all shadow-xl hover:scale-105 transform duration-200"
         >
           Start Creating Testimonials — Free

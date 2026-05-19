@@ -1,6 +1,6 @@
 import { CheckCircle, MessageCircle } from "lucide-react";
 import Link from "next/link";
-import { CTA_TO_CREATE } from "../variables/constant";
+import { CTA_TO_CREATE_TESTIMONIAL_GENERATOR } from "../variables/constant";
 
 export default function SectionHero() {
   return (
@@ -22,12 +22,12 @@ export default function SectionHero() {
             Build Trust with Authentic Testimonials
           </h1>
           <p className="text-gray-600 text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0">
-            Create realistic-looking testimonial images from WhatsApp conversations
-            in seconds. Boost your sales conversion today!
+            Create realistic-looking testimonial images from WhatsApp
+            conversations in seconds. Boost your sales conversion today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
-              href={CTA_TO_CREATE}
+              href={CTA_TO_CREATE_TESTIMONIAL_GENERATOR}
               className="bg-[#128C7E] hover:bg-[#075E54] text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg flex items-center justify-center gap-2"
             >
               Try Generator Now <MessageCircle size={20} />
@@ -67,7 +67,8 @@ export default function SectionHero() {
               </div>
               <div className="bg-white p-3 rounded-lg rounded-tl-none shadow-sm max-w-[85%] relative">
                 <p className="text-sm text-gray-800">
-                  The quality is really good, the material is comfortable. Don't regret buying it here!
+                  The quality is really good, the material is comfortable. Don't
+                  regret buying it here!
                 </p>
                 <div className="text-[10px] text-gray-400 text-right mt-1">
                   10:43 AM
@@ -75,7 +76,8 @@ export default function SectionHero() {
               </div>
               <div className="bg-[#DCF8C6] p-3 rounded-lg rounded-tr-none shadow-sm max-w-[85%] ml-auto relative">
                 <p className="text-sm text-gray-800">
-                  Wow, thank you so much for your trust! We look forward to your next order 🙏
+                  Wow, thank you so much for your trust! We look forward to your
+                  next order 🙏
                 </p>
                 <div className="text-[10px] text-gray-500 text-right mt-1 flex justify-end items-center gap-1">
                   10:45 AM <span className="text-[#34B7F1]">✓✓</span>
@@ -87,7 +89,9 @@ export default function SectionHero() {
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-gray-400">
                 <MessageCircle size={16} />
               </div>
-              <div className="flex-1 text-gray-400 text-sm">Type a message...</div>
+              <div className="flex-1 text-gray-400 text-sm">
+                Type a message...
+              </div>
             </div>
           </div>
         </div>
